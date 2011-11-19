@@ -21,7 +21,7 @@ TND::Application.configure do
   config.assets.digest = true
 
   config.middleware.use OmniAuth::Builder do
-    provider :facebook, '202735413135831', '3be95d719af0238aa3a344deee06fef2'
+    provider :facebook, '202735413135831', '3be95d719af0238aa3a344deee06fef3'
   end
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
