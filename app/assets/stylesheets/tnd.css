@@ -1,6 +1,7 @@
 #container { padding-top: 50px; }
 #thumbnails div { text-align: center; }
 #slides img {padding: 0 20px;}
+.thumbnail {padding: 5px; background-color: #eee; }
 
 /* FOOTER SECTION */
 #footer {height: 150px; padding: 5px 0; border-top: 1px solid #ccc; background-color: #eee;}
