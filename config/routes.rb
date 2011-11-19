@@ -1,5 +1,6 @@
 TND::Application.routes.draw do
   get "home/index"
 
-  root :to=>'home#index'
+ match '/auth/:provider/callback', :to => 'sessions#create'
+ root :to=>'home#index'
 end
