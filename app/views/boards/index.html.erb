@@ -1,0 +1,45 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="/javascript/jquery.masonry.min.js"></script>
+
+<div id="header_navi">
+<h1>TREASURE NEXT DOOR</h1>
+<select name="area">
+  <option>東京都杉並区</option>
+</select>
+
+</div>
+
+<div id="container">
+  <% @boards.each do |board| %>
+    <div class="item">
+      <div class="corner">
+        <span>￥ 1,800</span>
+      </div>
+      <%= tag("img",:src => "/images/A_itemboard_03.png") %>
+      <div class="item_desc">
+        <p class="item_title"><%= board.name %></p>
+
+        <div class="user">
+          <%= tag("img",:src => "/images/takejune.jpg") %>
+          <p class="username">June Taketani</p>
+          <div class="clear"></div>
+
+        </div>
+        <div class="like">
+           10
+         </div>
+      </div>
+    </div>
+  <% end %>
+  <div class="clear"></div>
+
+<br />
+
+<%= link_to 'New Board', new_board_path %>
+</div>
+
+<script type="text/javascript">
+$('#container').masonry({
+  itemSelector: '.item'
+});
+</script>
