@@ -7,6 +7,6 @@ class SessionsController < ApplicationController
     end
     self.current_user = @auth.user
 
-    redirect_to root_path, :notice=>"Logged in successfully #{current_user.name}"
+    redirect_to root_path, :notice=>"Logged in successfully #{current_user.name}. You are at #{current_user.location || 'unkonwn' }"
   end
 end

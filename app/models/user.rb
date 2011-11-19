@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
 
   def self.create_from_hash!(hash)
     logger.debug hash.to_yaml
-    create(:name => hash['info']['name'])
+    create(:name => hash['info']['name'], :location=>hash['info']['location'])
   end
 end
