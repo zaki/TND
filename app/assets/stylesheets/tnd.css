@@ -1,0 +1,8 @@
+#container { padding-top: 50px; }
+/* FOOTER SECTION */
+#footer {height: 150px; padding: 5px 0; border-top: 1px solid #ccc; background-color: #eee;}
+#footer_links {display: inline; list-style: none; padding-left: 0;}
+#footer_links li {display: inline; padding-right: 10px;}
+#footer_links li a {color: #666; text-decoration: none;}
+#poweredby, #copyright {text-align: right; color: #999; font-size: 0.8em;}
+

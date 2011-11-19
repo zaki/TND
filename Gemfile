@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'paperclip'
 gem 'aws-s3'
+gem 'twitter-bootstrap-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5.rc.2'
