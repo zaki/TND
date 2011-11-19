@@ -9,7 +9,7 @@ class ItemsController < ApplicationController
     if (@item.save)
       redirect_to item_path(@item), :notify => 'Successfully created item'
     else
-      render :new
+      render :new, :notify => 'The item could not be created'
     end
   end
 

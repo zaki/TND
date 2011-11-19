@@ -7,6 +7,15 @@ class Item < ActiveRecord::Base
   scope :public,  where(:public=>true)
   scope :private, where(:public=>false)
 
+  has_attached_file :photo,
+                    :styles => { :medium => "300x300>", :thumb => "180x180>" },
+                    :storage => :s3,
+                    :bucket => 'mybucket',
+                    :s3_credentials => {
+                      :access_key_id => ENV['S3_KEY_ID'],
+                      :secret_access_key => ENV['S3_SECRET']
+                    }
+
   def expire_date
     expires_at.strftime('%Y-%m-%d')
   end
