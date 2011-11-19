@@ -1,0 +1,10 @@
+%h2.item-name
+  = item.name
+.item-description
+  = item.description
+.item-price
+  = pricify item.price
+
+- unless item.expires_at.blank?
+  .item-expires
+    = item.expires_at.strftime('%Y-%m-%d')

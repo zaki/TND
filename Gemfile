@@ -4,6 +4,7 @@ gem 'rails', '3.1.2'
 gem 'omniauth-facebook'
 gem 'haml'
 gem 'jquery-rails'
+gem 'simple_form'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5.rc.2'
