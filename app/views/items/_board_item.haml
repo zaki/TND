@@ -1,0 +1,11 @@
+.item-container
+  .item-box
+    .item-photo
+      = image_tag "item-image-samples/A_itemboard_0#{rand(8)+1}.png", :width=>150, :height=>150
+    .item-name
+      = item.name
+    .item-user-name
+      = item.user.name
+    .item-ribbon
+      .item-price
+        = pricify item.price
