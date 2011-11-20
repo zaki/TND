@@ -1,13 +1,15 @@
 .item-container
   .item-box
-    .item-photo
-      = image_tag item.photo.url(:thumb)
-    .item-desc
-      .item-name
-        = item.name
-      .item-user-photo
-        = image_tag "item-user-photo-samples/user_#{rand(2)+1}.png"
-      .item-user-name
-        = item.user.name
-      .item-ribbon
-        = pricify item.price
+    %a{:href=>item_path(item)}
+      .item-data
+        .item-photo
+          = image_tag item.photo.url(:thumb)
+        .item-desc
+          .item-name
+            = item.name
+          .item-user-photo
+            = image_tag "item-user-photo-samples/user_#{rand(2)+1}.png"
+          .item-user-name
+            = item.user.name
+          .item-ribbon
+            = pricify item.price

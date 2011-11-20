@@ -8,29 +8,7 @@ class BoardsController < ApplicationController
   end
 
   def me
-#    @items = @user.items
-    @items = [
-      Item.new(:price=>1800, :name=>'God\'s Light In Me (絵本)', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'花のパターンの服（可愛い＾＾', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'コーヒーメーカー', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'青いソファー', :description=>'test', :user=>current_user),
-      Item.new(:price=>0, :name=>'テディベア', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'女子服', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ギター', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'God\'s Light In Me (絵本)', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'花のパターンの服（可愛い＾＾', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'コーヒーメーカ', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'青いソファー', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'テディベア', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'女子服', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ギター', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
-    ]
+    @items = @user.items
   end
 
   def nearby

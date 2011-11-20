@@ -4,11 +4,11 @@
       = link_to "Treasure Next Door", root_path, :class=>:brand
 
       %ul.nav
-        %li.active
+        %li#myboard
           = link_to 'マイボード', my_board_path
-        %li
+        %li#friendboard
           = link_to '友達ボード', friends_board_path
-        %li
+        %li#nearbyboard
           = link_to '近所ボード', nearby_board_path
 
       %ul.nav.secondary-nav
