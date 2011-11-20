@@ -1,0 +1,15 @@
+
+#board-select
+  .current-board
+    %h2
+      = @current_board || 'マイボード'
+
+    = form_tag do |f|
+      %span.select-label
+        地域：
+      = tokyo_ward_select()
+      %span.select-label
+        コミュニティ：
+      = community_select()
+      = submit_tag '更新', :class=>'btn primary'
+
