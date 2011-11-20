@@ -7,8 +7,29 @@ class BoardsController < ApplicationController
   end
 
   def me
-    #@items = @user.items
-    @items = [Item.new(:name=>'Test Item', :description=>'test', :user=>current_user)]*10
+#    @items = @user.items
+    @items = [
+      Item.new(:name=>'God\'s Light In Me (絵本)', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
+      Item.new(:name=>'花のパターンの服（可愛い＾＾', :description=>'test', :user=>current_user),
+      Item.new(:name=>'コーヒーメーカー', :description=>'test', :user=>current_user),
+      Item.new(:name=>'青いソファー', :description=>'test', :user=>current_user),
+      Item.new(:name=>'テディベア', :description=>'test', :user=>current_user),
+      Item.new(:name=>'女子服', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ギター', :description=>'test', :user=>current_user),
+      Item.new(:name=>'God\'s Light In Me (絵本)', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
+      Item.new(:name=>'花のパターンの服（可愛い＾＾', :description=>'test', :user=>current_user),
+      Item.new(:name=>'コーヒーメーカ', :description=>'test', :user=>current_user),
+      Item.new(:name=>'青いソファー', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
+      Item.new(:name=>'テディベア', :description=>'test', :user=>current_user),
+      Item.new(:name=>'女子服', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ギター', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
+      Item.new(:name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
+    ]
   end
 
   def nearby
