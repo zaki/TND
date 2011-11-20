@@ -1,7 +1,7 @@
 .item-container
   .item-box
     .item-photo
-      = image_tag "item-image-samples/A_itemboard_0#{rand(8)+1}.png", :width=>150, :height=>150
+      = image_tag item.photo.url(:thumb)
     .item-desc
       .item-name
         = item.name
