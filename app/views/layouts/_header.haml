@@ -4,11 +4,16 @@
       = link_to "Treasure Next Door", root_path, :class=>:brand
 
       %ul.nav
+        %li.active
+          = link_to 'マイボード', my_board_path
+        %li
+          = link_to '友達ボード', friends_board_path
+        %li
+          = link_to '近所ボード', nearby_board_path
 
       %ul.nav.secondary-nav
         - unless current_user.blank?
-          %li.active
-            = link_to current_user.name, my_board_path
+          %li= link_to current_user.name, my_board_path
           %li= link_to 'Logout', root_path
         - else
           %li= link_to 'Login with Facebook', '/auth/facebook'

@@ -10,7 +10,7 @@
 //
 $(document).ready(function() { 
   $("#slides").cycle();  
-  $("#container").masonry({
+  $("#board").masonry({
     itemSelector: '.item-box'
   });
 });
