@@ -57,3 +57,7 @@ item.photo = File.open(Rails.root.join("public/images/item_image_guitar.png"))
 item.user = takada
 item.save!
 
+item = Item.find_or_initialize_by_name_and_description_and_expires_at(:name=>'ポロシャツ', :description=>'-', :expires_at=>3.days.since)
+item.photo = File.open(Rails.root.join("public/images/item_image_polo.png"))
+item.user = takada
+item.save!
