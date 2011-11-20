@@ -13,21 +13,25 @@ body {
   margin: 0 auto;
 }
 
-.item {
+.item-container {
+  background-color: transparent;
+}
+
+.item-box {
   background-color: #fff;
   width: 170px;
-  float: left;
+/*  float: left; */
   margin: 0 15px 15px 0;
   padding: 0;
 }
 
-.item img {
+.item-box img {
   width: 160px;
   height: 180px;
   margin: 5px 5px 5px 5px;
 }
 
-.item_desc {
+.item-desc {
   background-image: url('/images/bg_item_thumb.png');
   background-repeat: repeat;
 }
@@ -36,14 +40,14 @@ body {
   margin: 0 10px 0 0;
 }
 
-.user img {
+.item-user-photo img {
   width: 30px;
   height: 30px;
   float: left;
 }
 
-.user p.username {
-  padding: 15px 0 0 0;
+.item-user-name {
+  padding: 15px 10px 5px 5px;
   color: #afafaf;
 }
 
@@ -51,12 +55,13 @@ body {
   clear: both;
 }
 
-p.item_title {
+.item-name {
   color: #afafaf;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
 }
 
-.like {
+.item-like {
   width: 50px;
   height: 21px;
   background: #ee9ac9 url('/images/icon_heart.png') no-repeat 5px 5px;

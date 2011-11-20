@@ -8,4 +8,9 @@
 //= require jquery_ujs
 //= require_tree .
 //
-$(document).ready(function() { $("#slides").cycle();  });
+$(document).ready(function() { 
+  $("#slides").cycle();  
+  $("#container").masonry({
+    itemSelector: '.item-box'
+  });
+});
