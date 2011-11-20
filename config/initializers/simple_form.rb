@@ -91,3 +91,9 @@ SimpleForm.setup do |config|
   # When false, do not use translations for labels, hints or placeholders.
   # config.translate = true
 end
+
+SimpleForm.form_class = nil
+SimpleForm.wrapper_class = 'clearfix'
+SimpleForm.wrapper_error_class = 'error'
+SimpleForm.error_class = 'help-inline'
+
