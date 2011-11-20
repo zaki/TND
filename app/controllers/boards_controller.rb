@@ -23,11 +23,11 @@ class BoardsController < ApplicationController
       Item.new(:price=>1800, :name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'花のパターンの服（可愛い＾＾', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'コーヒーメーカ', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'青いソファー', :description=>'test', :user=>current_user),
+      Item.new(:price=>0, :name=>'青いソファー', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'テディベア', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'女子服', :description=>'test', :user=>current_user),
-      Item.new(:price=>1800, :name=>'ギター', :description=>'test', :user=>current_user),
+      Item.new(:price=>0, :name=>'ギター', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'ノーブランドのリュックサック', :description=>'test', :user=>current_user),
       Item.new(:price=>1800, :name=>'ちゃりんこ！', :description=>'test', :user=>current_user),
     ]
