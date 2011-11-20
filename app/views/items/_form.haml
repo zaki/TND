@@ -6,6 +6,22 @@
   = f.input :public, :as=>:select, :input_html => { :class=>'xlarge disabled'}, :hint=>'非公開にしますと友達以外誰も見えません', :disabled=>true
   = f.input :photo, :as=>:file, :input_html => { :class=>'xlarge'}, :hint=>'商品写真をアップロードしてください'
 
+  .clearfix
+    %label
+      コミュニティ
+    .input
+      %ul.inputs-list
+        %li
+          %label
+            %input{:type=>:checkbox}
+            %span
+              VOYAGE GROUP
+        %li
+          %label
+            %input{:type=>:checkbox}
+            %span
+              東京大学
+
   .actions
     = f.submit 'アイテムを追加します', :class=>'btn primary'
     = link_to 'キャンセル', :back, :class=>'btn'
