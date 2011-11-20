@@ -96,14 +96,13 @@ body {
 .item-ribbon {
   background: url("/images/bg_ribbon_l.png") no-repeat left top;
   background-size: 100px 100px;
-  /*  z-index: 10000;*/
   position: absolute;
   top: 0;
   width: 119px;
   height: 120px;
 }
 
-/* line 87, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 86, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-price {
   color: #fff;
   font-weight: normal;
@@ -117,7 +116,7 @@ body {
   transform: rotate(-45deg);
 }
 
-/* line 100, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 99, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-price-free {
   color: #fff;
   font-weight: bold;
@@ -131,18 +130,18 @@ body {
   transform: rotate(-45deg);
 }
 
-/* line 113, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 112, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 #board-select {
   background-color: #eee;
   padding: 5px;
 }
 
-/* line 114, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 113, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 span.select-label {
   padding-left: 15px;
 }
 
-/* line 115, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 114, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 #board {
   margin-top: 25px;
 }
