@@ -9,4 +9,9 @@ class SessionsController < ApplicationController
 
     redirect_to root_path, :notice=>"Logged in successfully #{current_user.name}. You are at #{current_user.location || 'unknown' }"
   end
+
+  def destroy
+    logout!()
+    redirect_to root_path
+  end
 end

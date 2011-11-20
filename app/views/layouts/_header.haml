@@ -14,7 +14,7 @@
       %ul.nav.secondary-nav
         - unless current_user.blank?
           %li= link_to current_user.name, my_board_path
-          %li= link_to 'Logout', root_path
+          %li= link_to 'Logout', destroy_session_path
         - else
           %li= link_to 'Login with Facebook', '/auth/facebook'
 

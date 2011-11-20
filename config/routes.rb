@@ -8,5 +8,6 @@ TND::Application.routes.draw do
   get 'boards/nearby',  :as=>:nearby_board
 
   match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/session/destroy', :to=>'sessions#destroy', :as=>:destroy_session
   root :to=>'home#index'
 end
