@@ -2,3 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #slides li { list-style: none; padding: 0; margin: 0;}
+
+.explanation_container {
+  background: #E8E8CB;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.facebook_button {
+  margin-bottom:30px;
+}
+
+.main_images {
+  padding: 20px;
+  padding-left:60px;
+  background: #343434;
+}
+
+.span4 {
+  text-align:center;
+}

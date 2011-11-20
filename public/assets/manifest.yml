@@ -21,6 +21,10 @@ item-image-samples/A_itemboard_08.png: item-image-samples/A_itemboard_08-b7a6f9c
 item-image-samples/A_itemboard_09.png: item-image-samples/A_itemboard_09-8e174d0d0b48ff4f4c328fcf54a47fd7.png
 item-user-photo-samples/user_1.png: item-user-photo-samples/user_1-b7a01206a24a405be7b9e813b669bdf5.png
 item-user-photo-samples/user_2.png: item-user-photo-samples/user_2-bddda565115e754894e082ac86767d3d.png
+item-user-photo-samples/user_3.png: item-user-photo-samples/user_3-ca7c894f51836cb89d30ee326b88fcad.png
+item-user-photo-samples/user_4.png: item-user-photo-samples/user_4-9ebf78586a63fef5cf7357d663eb4dcd.png
+item-user-photo-samples/user_5.png: item-user-photo-samples/user_5-8acd77b99534487824d70b3c6cef8eba.png
+item-user-photo-samples/user_6.png: item-user-photo-samples/user_6-d05d6c3a7d2857a1467d16c64bfcc900.png
 logo_tresure.png: logo_tresure-8c382c2ac8d9766e588b5719874e7299.png
 main_slide_01.png: main_slide_01-fe435f6686796201a444aeda8d47b82b.png
 main_slide_02.png: main_slide_02-67a001093938fec1085859e1f831f0c9.png
@@ -36,4 +40,4 @@ pict_about_03.png: pict_about_03-56213df837e9c9e544909541f531eb3a.png
 pict_about_04.png: pict_about_04-f878db63f4c5eb9d1c34df3a424f17c1.png
 rails.png: rails-9dd6cb09c6272d5724c9f439cac0aecd.png
 application.js: application-9f4436ea5b5d24263eee206b7284a3d0.js
-application.css: application-7fe5f445a6335c526c8cabfba08de7ac.css
+application.css: application-37bb50aae95a7446780d7b6c776a9b38.css

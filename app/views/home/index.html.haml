@@ -1,16 +1,25 @@
-.hero-unit
+.main_images
   #slides
-    = image_tag 'photo01.png', :width=>780, :height=>300
-    = image_tag 'photo02.png', :width=>780, :height=>300
-    = image_tag 'photo03.png', :width=>780, :height=>300
-    = image_tag 'photo04.jpg', :width=>780, :height=>300
-
-.row#thumbnails
-  .span4
-    = image_tag('photo01.jpg', :height=>'120', :width=>'120', :class=>'thumbnail')
-  .span4
-    = image_tag('photo02.jpg', :height=>'120', :width=>'120', :class=>'thumbnail')
-  .span4
-    = image_tag('photo03.jpg', :height=>'120', :width=>'120', :class=>'thumbnail')
-  .span4
-    = image_tag('photo04.jpg', :height=>'120', :width=>'120', :class=>'thumbnail')
+    - 1.upto(3) do |index|
+      = image_tag "main_slide_0#{index}.png", :width=>780, :height=>300
+.explanation_container
+  .row.facebook_button
+    .span4.offset6
+      = link_to image_tag("btn_connect_fb_l.png"), '/auth/facebook'
+  .row#thumbnails
+    - 1.upto(4) do |index|
+      .span4
+        = image_tag("pict_about_0#{index}.png", :height=>'168', :width=>'158', :class=>'thumbnail')
+  .row
+    .span4.explanation_text
+      %h3
+        I don't need this
+    .span4.explanation_text
+      %h3
+        Upload
+    .span4.explanation_text
+      %h3
+        Connect
+    .span4.explanation_text
+      %h3
+        Give
