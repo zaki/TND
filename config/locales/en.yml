@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  simple_form:
+    labels:
+      item:
+        name: 商品名
+        description: 商品の説明
