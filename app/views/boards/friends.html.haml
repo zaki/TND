@@ -1,5 +1,16 @@
-= render 'board_select'
-.row
-  #board.span16
-    - 0.upto 4 do |col|
-      = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item
+= content_for :head_js do
+  :javascript
+    $(document).ready(function() { $("#friendboard").addClass('active'); });
+
+- if @items.blank?
+  .row
+    .span16
+      .no-items
+        %h3
+          このカテゴリはまだアイテムはありません
+- else
+  = render 'board_select'
+  .row
+    #board.span16
+      - 0.upto 4 do |col|
+        = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item

@@ -1,5 +1,20 @@
+= content_for :head_js do
+  :javascript
+    $(document).ready(function() { $("#myboard").addClass('active'); });
 
 .row
-  #board.span16
-    - 0.upto 4 do |col|
-      = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item
+  .span16
+    .item-add
+      = link_to 'アイテムの追加', new_item_path, :class=>'btn primary'
+
+- if @items.blank?
+  .row
+    .span16
+      .no-items
+        %h3
+          このカテゴリはまだアイテムはありません
+- else
+  .row
+    #board.span16
+      - 0.upto 4 do |col|
+        = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item

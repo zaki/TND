@@ -98,11 +98,12 @@ body {
   background-size: 100px 100px;
   position: absolute;
   top: 0;
+  left: 0;
   width: 119px;
   height: 120px;
 }
 
-/* line 86, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 87, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-price {
   color: #fff;
   font-weight: normal;
@@ -116,7 +117,7 @@ body {
   transform: rotate(-45deg);
 }
 
-/* line 99, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 100, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-price-free {
   color: #fff;
   font-weight: bold;
@@ -130,20 +131,38 @@ body {
   transform: rotate(-45deg);
 }
 
-/* line 112, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 113, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 #board-select {
   background-color: #eee;
   padding: 5px;
 }
 
-/* line 113, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 114, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 span.select-label {
   padding-left: 15px;
 }
 
-/* line 114, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+/* line 115, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 #board {
   margin-top: 25px;
+}
+
+/* line 116, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+#board a:hover {
+  text-decoration: none;
+}
+
+/* line 117, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+.no-items {
+  background-color: #fff;
+  text-align: center;
+}
+
+/* line 118, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
+.item-add {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
 }
 /* line 4, /Users/cutmail/Work/github/TND/app/assets/stylesheets/home.css.scss */
 #slides li {
