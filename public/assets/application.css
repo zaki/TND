@@ -62,7 +62,7 @@ body {
 
 /* line 49, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-user-name {
-  padding: 15px 10px 5px 0;
+  padding: 15px 10px 5px 5px;
   color: #afafaf;
 }
 
@@ -74,7 +74,7 @@ body {
 /* line 58, /Users/cutmail/Work/github/TND/app/assets/stylesheets/boards.css.scss */
 .item-name {
   color: #afafaf;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px 10px;
   font-size: 15px;
 }
 
@@ -130,6 +130,34 @@ body {
   left: 0px;
   color: #fff;
   font-size: 20px;
+}
+
+/* line 12, /Users/cutmail/Work/github/TND/app/assets/stylesheets/items.css.scss.erb */
+.item-details {
+  background: #eee;
+  padding: 20px;
+}
+
+/* line 13, /Users/cutmail/Work/github/TND/app/assets/stylesheets/items.css.scss.erb */
+.item-details .item-name {
+  font-size: 26px;
+}
+
+/* line 14, /Users/cutmail/Work/github/TND/app/assets/stylesheets/items.css.scss.erb */
+.item-details .item-description {
+  padding: 10px 0;
+}
+
+/* line 15, /Users/cutmail/Work/github/TND/app/assets/stylesheets/items.css.scss.erb */
+.item-details .item-expires {
+  margin-top: 25px;
+  border-top: 1px dashed #ccc;
+}
+
+/* line 16, /Users/cutmail/Work/github/TND/app/assets/stylesheets/items.css.scss.erb */
+.item-comments {
+  background: #eee;
+  padding: 20px;
 }
 
 /* ---------------------

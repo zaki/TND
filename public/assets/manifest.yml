@@ -16,7 +16,8 @@ item-image-samples/A_itemboard_06.png: item-image-samples/A_itemboard_06.png
 item-image-samples/A_itemboard_07.png: item-image-samples/A_itemboard_07.png
 item-image-samples/A_itemboard_08.png: item-image-samples/A_itemboard_08.png
 item-image-samples/A_itemboard_09.png: item-image-samples/A_itemboard_09.png
-item-user-photo-samples/takejune.jpg: item-user-photo-samples/takejune.jpg
+item-user-photo-samples/user_1.png: item-user-photo-samples/user_1.png
+item-user-photo-samples/user_2.png: item-user-photo-samples/user_2.png
 logo_tresure.png: logo_tresure.png
 main_slide_01.png: main_slide_01.png
 main_slide_02.png: main_slide_02.png
@@ -31,6 +32,5 @@ pict_about_02.png: pict_about_02.png
 pict_about_03.png: pict_about_03.png
 pict_about_04.png: pict_about_04.png
 rails.png: rails.png
-takejune.png: takejune.png
 application.js: application.js
 application.css: application.css

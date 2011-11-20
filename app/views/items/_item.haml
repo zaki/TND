@@ -1,10 +1,20 @@
 %h2.item-name
   = item.name
+.item-photo
+  = image_tag item.photo.url
 .item-description
   = item.description
 .item-price
   = pricify item.price
 
+- unless current_user == item.user
+  .item-want
+    = link_to '★欲しい★', '', :class=>'btn primary'
+
 - unless item.expires_at.blank?
   .item-expires
+    この商品は
     = item.expires_at.strftime('%Y-%m-%d')
+    までとれます。
+
+
