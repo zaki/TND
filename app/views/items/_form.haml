@@ -1,10 +1,10 @@
 = simple_form_for item do |f|
   = f.input :name, :input_html => { :class=>'xlarge'}
-  = f.input :description, :input_html => { :class=>'xlarge'}, :hint=>'商品の状況も教えるといいね'
-  = f.input :price, :input_html => { :class=>'xlarge disabled'}, :disabled=>true, :hint=>'β版の時、無料だけ選択できますので、ご注意とご了承をお願いします'
+  = f.input :description, :input_html => { :class=>'xlarge'}, :hint=>'商品の説明を詳しく入力してください。'
+  = f.input :price, :input_html => { :class=>'xlarge disabled'}, :disabled=>true, :hint=>'β版の期間は、無料のみとなります。'
   = f.input :expires_at, :as=>:date
-  = f.input :public, :as=>:select, :input_html => { :class=>'xlarge disabled'}, :hint=>'非公開にしますと友達以外誰も見えません', :disabled=>true
-  = f.input :photo, :as=>:file, :input_html => { :class=>'xlarge'}, :hint=>'商品写真をアップロードしてください'
+  = f.input :public, :as=>:select, :input_html => { :class=>'xlarge disabled'}, :hint=>'非公開にすると友達以外には見えません。', :disabled=>true
+  = f.input :photo, :as=>:file, :input_html => { :class=>'xlarge'}, :hint=>'商品の写真を選択してください'
 
   .actions
     = f.submit 'アイテムを追加します', :class=>'btn primary'
