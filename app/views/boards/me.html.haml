@@ -1,4 +1,3 @@
 .row
   - 0.upto 4 do |col|
-    .span4
-      = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item
+    = render :partial=>'items/board_item', :collection=>(@items.to_enum.select.with_index {|x, i| x if i % 4 == col}), :as=>:item

@@ -2,10 +2,15 @@
   .item-box
     .item-photo
       = image_tag "item-image-samples/A_itemboard_0#{rand(8)+1}.png", :width=>150, :height=>150
-    .item-name
-      = item.name
-    .item-user-name
-      = item.user.name
-    .item-ribbon
-      .item-price
-        = pricify item.price
+    .item-desc
+      .item-name
+        = item.name
+      .item-user-photo
+        = image_tag "item-user-photo-samples/user_#{rand(2)+1}.png"
+      .item-user-name
+        = item.user.name
+      .item-like
+        = 10
+      .item-ribbon
+        .item-price
+          = pricify item.price
