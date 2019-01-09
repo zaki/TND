@@ -1,1 +1,1 @@
-rvm use 1.9.2@tnd --create
+rvm use 2.5.3@tnd --create
